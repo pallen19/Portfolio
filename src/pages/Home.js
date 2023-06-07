@@ -1,8 +1,15 @@
-import React from 'react'
-
+import React from 'react';
+import '../index.css';
+import { Footer } from '../components/Footer';
+import  {NavBar} from '../components/NavBar';
 const Home = () => {
   return (
-    <div>Home</div>
+    <>
+    <NavBar/>
+    <div>This is where the Home Page Information will exist!</div>
+
+    <Footer/>
+    </>
   )
 }
 

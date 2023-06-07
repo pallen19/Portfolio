@@ -1,10 +1,15 @@
 import React from "react"
+import Home from '../pages/Home'
+import NavBar from './NavBar';
+import '../index.css';
 
 const App = () => {
   return (
     <>
     <div>
-      <p>Hi! I'm Paul Web Dev</p>
+      {/* <NavBar/> */}
+      <Home/>
+      
     </div>
     </>
   )
