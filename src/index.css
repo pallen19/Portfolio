@@ -5,3 +5,8 @@
 body{
    background-color: #000300;
 }
+
+.flex{
+   list-style: none;
+   display: flex;
+}
