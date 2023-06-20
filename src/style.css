@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+   background-color: black;
+   
+}
+.home_title{
+   font-size: 1.7rem;
+   list-style: none;
+   display:inline;
+   position:relative;
+   top: 1.5rem;
+   left: 1.5rem;
+   padding-left: 20px;
+   font-weight: bold;
+   color: aquamarine;
+}
+.nav-links{
+   font-size: 1rem;
+   list-style: none;
+   display: inline;
+   padding:0px 0px 0px 40px;
+   font-family: Helvetica, Arial, sans-serif;
+   position: relative;
+   top: 0rem;
+   left: 90rem;
+   color: gray;
+  
+}
+.nav-links:hover{
+   
+   transition-delay: 85ms;
+   color: white;
+}
+
+.home_page{
+   color: aliceblue;
+}

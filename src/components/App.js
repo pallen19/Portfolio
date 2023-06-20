@@ -1,12 +1,12 @@
 import React from "react"
 import Home from '../pages/Home'
 import NavBar from './NavBar';
-import '../index.css';
+import '../style.css';
 
 const App = () => {
   return (
     <>
-    <div>
+    <div className="entire_page">
       {/* <NavBar/> */}
       <Home/>
       
