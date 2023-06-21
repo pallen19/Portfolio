@@ -4,6 +4,7 @@
 
 body{
    background-color: black;
+   display: grid;
    
 }
 .home_title{
@@ -12,7 +13,7 @@ body{
    display:inline;
    position:relative;
    top: 1.5rem;
-   left: 1.5rem;
+   left: 10rem;
    padding-left: 20px;
    font-weight: bold;
    color: aquamarine;
@@ -37,4 +38,37 @@ body{
 
 .home_page{
    color: aliceblue;
+}
+
+.main_photo{
+   padding-top: 30px;
+   padding-left: 20px;
+   size: 10rem;
+   width: 30rem;
+   height: 80rem;
+}
+
+.backdrop{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: #000000e1;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+}
+
+.modal{
+   width: clamp(50%, 700px, 90%);
+   height: min (50%, 300px);
+   margin:auto;
+   padding: 0 2rem;
+   border-radius: 12px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   
 }

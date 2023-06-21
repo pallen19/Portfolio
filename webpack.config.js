@@ -36,15 +36,28 @@ module.exports = {
             loader: 'babel-loader',
             options: {
                 presets: ['@babel/preset-env', '@babel/preset-react']
-            }
-        }
+            },
+        },
+    },
+    {   test: /\.jsx$/, 
+        exclude: "/node_modules", 
+        use: {
+            loader: 'babel-loader',
+            options: {
+                presets: ['@babel/preset-env', '@babel/preset-react']
+            },
+        },
     },
     {
         test: /\.css$/i,
         include: path.resolve(__dirname, 'src'),
         use: ["style-loader", "css-loader", "postcss-loader"],
       },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [ "file-loader" ],
+        },
+    ],
     
-  ],
   },
 };

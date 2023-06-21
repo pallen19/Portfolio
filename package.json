@@ -15,6 +15,7 @@
     "@babel/plugin-transform-runtime": "^7.22.2",
     "@headlessui/react": "^1.7.15",
     "@heroicons/react": "^2.0.18",
+    "framer-motion": "^10.12.16",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -25,6 +26,7 @@
     "autoprefixer": "^9.8.6",
     "babel-loader": "^9.1.2",
     "css-loader": "^6.8.1",
+    "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.1",
     "postcss": "^8.4.24",
     "postcss-cli": "^10.1.0",
