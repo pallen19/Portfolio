@@ -18,22 +18,25 @@ const dropIn= {
         },
     },
     exit: {
-        y:"100vh"
+        y:"-100vh"
     },
 };
-export const Modal = ({handleClose, text}) => {
+export const Modal = ({handleClose, fullName, message, onSubmit}) => {
   return (
     
     <Backdrop onClick={handleClose}>
         <motion.div
-        onClick={(e)=> e.stopPropagation()}
-            className="modal grey-gradient"
+            drag="true"
+            onClick={(e)=> e.stopPropagation()}
+            className="modal"
             variants={dropIn}
             initial= "hidden"
             animate="visible"
             exit="exit"
             >
-            <p>{text}</p>
+            <h1>{fullName}</h1>
+            <h1>{message}</h1>
+            <h2>{onSubmit}</h2>
             <button onClick={handleClose}>Close</button>
         </motion.div>
     </Backdrop>

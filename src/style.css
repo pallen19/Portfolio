@@ -28,6 +28,7 @@ body{
    top: 0rem;
    left: 90rem;
    color: gray;
+   cursor: pointer;
   
 }
 .nav-links:hover{
@@ -70,5 +71,27 @@ body{
    display: flex;
    flex-direction: column;
    align-items: center;
+   background-color: #D3D3D3;
    
+}
+
+.social-media{
+   list-style: none;
+   display: inline;
+   padding:0px 0px 0px 40px;
+   position: relative;
+   left: 0;
+}
+.social-logo{
+   list-style: none;
+   display: inline;
+   padding:0px 0px 0px 10px;
+   bottom: 0rem;
+   left: 0rem;
+   position: relative;
+   width:5rem;
+   bottom: .5rem;
+}
+.social-logo:hover{
+   cursor:pointer;
 }
