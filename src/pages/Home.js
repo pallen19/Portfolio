@@ -5,6 +5,8 @@ import '../style.css';
 import { Footer } from '../components/Footer';
 import  {NavBar} from '../components/NavBar';
 import mainPicture from '../assets/image.png'
+import Projects from './Projects.js';
+
 
 
 const Context = ()=>{
@@ -77,10 +79,16 @@ const Home = () => {
                             />}
 
         </AnimatePresence>
+        <Projects/>
       </div>
     </div>
+    
+   
+   
 
-    <Footer/>
+   
+      <Footer/>
+    
     </>
   )
 }
