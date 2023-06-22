@@ -21,7 +21,7 @@ const dropIn= {
         y:"-100vh"
     },
 };
-export const Modal = ({handleClose, fullName, message, onSubmit}) => {
+export const Modal = ({handleClose, title,  fullName, message, onSubmit}) => {
   return (
     
     <Backdrop onClick={handleClose}>
@@ -34,10 +34,11 @@ export const Modal = ({handleClose, fullName, message, onSubmit}) => {
             animate="visible"
             exit="exit"
             >
-            <h1>{fullName}</h1>
-            <h1>{message}</h1>
-            <h2>{onSubmit}</h2>
-            <button onClick={handleClose}>Close</button>
+            <h1 className='contact-title'>{title}</h1>
+            <h1 className='contact-name'>{fullName}</h1>
+            <h1 className='contact-message'>{message}</h1>
+            <h2 className='contact-submit'>{onSubmit}</h2>
+            <button className='contact-close' onClick={handleClose}>X</button>
         </motion.div>
     </Backdrop>
   )

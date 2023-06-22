@@ -97,8 +97,17 @@ body{
    cursor:pointer;
 }
 .project_title{
+  
    font-family: Helvetica, Arial, sans-serif;
    font-size: 2rem;
+   left: 0;
+    line-height: 200px;
+    margin-top: 200px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+
    
 }
 
@@ -115,3 +124,46 @@ body{
    font-size: 12px;
    box-decoration-break: slice;
 }
+
+.contact-title{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   text-shadow: 1px 1px 1px white, 2px 2px 1px white;
+   font-size: 2.5rem;
+   position: fixed;
+   top: 0px;
+   justify-content: center;
+}
+
+
+.contact-close{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 1.2rem;
+   position: fixed;
+   text-align: left;
+   top: 0.5rem;
+   left: 1rem;
+   
+}
+
+input[type=text]{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+input[type=Submit]{
+   background-color: white;
+   border-radius: 4px;
+   padding: .3rem;
+}
+input[type=Submit]:hover{
+cursor: pointer;
+
+}
+ .contact-message{
+   
+} 

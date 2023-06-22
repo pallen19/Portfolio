@@ -7,7 +7,7 @@ const App = () => {
   return (
     <>
     <div className="entire_page">
-      {/* <NavBar/> */}
+     
       <Home/>
       
     </div>

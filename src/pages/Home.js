@@ -60,9 +60,10 @@ const Home = () => {
         >
            {modalOpen && <Modal 
                             modalOpen={modalOpen}
+                            title={<h1>Send a message !</h1>}
                             fullName={<form>
                                         <label>
-                                          Name:
+                                          Name: 
                                           <input type='text' name='name'/>
                                         </label>
                                         {/* <input type='submit' value={"Submit"}/> */}
@@ -74,7 +75,7 @@ const Home = () => {
                                         </label>
                                         <input type='submit' value={"Submit"}/>
                                       </form>} 
-                            onSubmit={<button>Submit</button>}
+                            //  onSubmit={<input type='submit' value={"Submit"}/>}
                             handleClose={close} 
                             />}
 
