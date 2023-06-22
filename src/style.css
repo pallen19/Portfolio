@@ -174,33 +174,25 @@ cursor: pointer;
 .profession{
    
    font-family: Georgia, 'Times New Roman', Times, serif;
-   font-weight: bolder;
-   font-size: 3rem;
+   
    left: 0;
-    line-height: 50px;
-    margin-top: 200px;
-    position: absolute;
-    text-align: center;
-    justify-content: center;
-    top: 0%;
-    width: 100%;
-
+   line-height: 50px;
+   margin-top: 200px;
+   position: absolute;
+   text-align: center;
+   justify-content: center;
+   top: 0%;
+   width: 100%;
+   
 }
 .profession-name{
-/* font-family: Georgia, 'Times New Roman', Times, serif;
-   text-shadow: 1px 1px 1px white, 2px 2px 1px white;
-   font-size: 2.5rem;
-   position: absolute;
-   top: 0px;
-   justify-content: center; */
+   font-size: 4.0rem;
+   font-weight: bolder;
 }
 .profession-title{
-/* font-family: Georgia, 'Times New Roman', Times, serif;
-   text-shadow: 1px 1px 1px white, 2px 2px 1px white;
-   font-size: 2.5rem;
-   position: fixed;
-   top: 0px;
-   justify-content: center; */
+font-size: 1.75rem;
+font-weight: lighter;
+color:#D3D3D3;
 }
 
 .tech{
@@ -219,5 +211,5 @@ cursor: pointer;
 }
 
 .tech-stack ul li {
-   
+
 }
