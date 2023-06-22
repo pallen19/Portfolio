@@ -6,9 +6,8 @@ import { Footer } from '../components/Footer';
 import  {NavBar} from '../components/NavBar';
 import mainPicture from '../assets/image.png'
 import Projects from './Projects.js';
-
-
-
+import ProfessionName from '../components/ProfessionName.js';
+import TechStack from '../components/TechStack.jsx';
 const Context = ()=>{
   return(
     <>
@@ -26,13 +25,6 @@ const Home = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const close = () => setModalOpen(false);
   const open = () => setModalOpen(true);
-  const time = useTime()
-          // const rotate = useTransform(
-          //   time,
-          //   [0, 4000], // For every 4 seconds...
-          //   [0, 360], // ...rotate 360deg
-          //   { clamp: false }
-          // )
   return (
     <>
     <NavBar/>
@@ -40,6 +32,9 @@ const Home = () => {
     <div className='home_page'>
       <div className='main_photo'>
         <img src={mainPicture} alt="photo" />
+      </div>
+      <ProfessionName/>
+        <div>
         <motion.button
             
             whileHover={{scale:1.1}}
@@ -47,18 +42,17 @@ const Home = () => {
             className="save-button1"
             onClick={()=> (modalOpen ? close() : open())}
             
-            >Contact Me!</motion.button>
-
-           
-        
+            >Contact Me!
+        </motion.button>
+    
         <AnimatePresence
-        initial={false}
+          initial={false}
 
-        mode={"wait"}
+          mode={"wait"}
 
-        onExitComplete={()=> null}
+          onExitComplete={()=> null}
         >
-           {modalOpen && <Modal 
+          {modalOpen && <Modal 
                             modalOpen={modalOpen}
                             title={<h1>Send a message !</h1>}
                             fullName={<form>
@@ -80,16 +74,14 @@ const Home = () => {
                             />}
 
         </AnimatePresence>
+        </div>
+        <TechStack/>
         <Projects/>
-      </div>
+      
     </div>
-    
-   
-   
-
-   
+    <div className='footer'>
       <Footer/>
-    
+    </div>
     </>
   )
 }

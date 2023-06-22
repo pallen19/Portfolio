@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.home-page{
+
+   bottom: 0rem;
+}
 body{
    background-color: black;
    display: grid;
@@ -44,9 +48,11 @@ body{
 .main_photo{
    padding-top: 30px;
    padding-left: 20px;
+   padding-bottom: 1rem;
+   bottom: 0rem;
    size: 10rem;
-   width: 30rem;
-   height: 80rem;
+   width: 25%;
+   height: 70%;
 }
 
 .backdrop{
@@ -164,6 +170,54 @@ input[type=Submit]:hover{
 cursor: pointer;
 
 }
- .contact-message{
+
+.profession{
    
-} 
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-weight: bolder;
+   font-size: 3rem;
+   left: 0;
+    line-height: 50px;
+    margin-top: 200px;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    top: 0%;
+    width: 100%;
+
+}
+.profession-name{
+/* font-family: Georgia, 'Times New Roman', Times, serif;
+   text-shadow: 1px 1px 1px white, 2px 2px 1px white;
+   font-size: 2.5rem;
+   position: absolute;
+   top: 0px;
+   justify-content: center; */
+}
+.profession-title{
+/* font-family: Georgia, 'Times New Roman', Times, serif;
+   text-shadow: 1px 1px 1px white, 2px 2px 1px white;
+   font-size: 2.5rem;
+   position: fixed;
+   top: 0px;
+   justify-content: center; */
+}
+
+.tech{
+   left: 0;
+    line-height: 50px;
+    margin-top: 900px;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    top: 0%;
+    width: 100%;
+}
+
+.tech-stack ul {
+   list-style-type: none;
+}
+
+.tech-stack ul li {
+   
+}
