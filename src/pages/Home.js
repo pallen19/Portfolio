@@ -41,10 +41,10 @@ const Home = () => {
       <div className='main_photo'>
         <img src={mainPicture} alt="photo" />
         <motion.button
-           
+            
             whileHover={{scale:1.1}}
             whileTap={{scale:0.9}}
-            className="save-button"
+            className="save-button1"
             onClick={()=> (modalOpen ? close() : open())}
             
             >Contact Me!</motion.button>
