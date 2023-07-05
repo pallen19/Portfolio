@@ -1,18 +1,30 @@
 import React from "react"
 import Home from '../pages/Home'
+import Contact from '../pages/Contact'
 import NavBar from './NavBar';
 import '../style.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Projects from "../pages/Projects";
+import About from "./About";
+
+
 
 const App = () => {
   return (
     <>
-    <div className="entire_page">
-     
-      <Home/>
-      
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home/>}  />
+        <Route path="/contact" element={<Contact/>}  />
+        <Route path="/projects" element={<Projects/>}  />
+        <Route path="/about" element={<About/>}  />
+        
+      </Routes>
+    </BrowserRouter>
     </>
   )
 }
+
+
 
 export default App;

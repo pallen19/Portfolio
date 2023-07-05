@@ -76,11 +76,11 @@ const Home = () => {
         </AnimatePresence>
         </div>
         <TechStack/>
-        <Projects/>
+        {/* <Projects/> */}
       
     </div>
     <div className='footer'>
-      <Footer/>
+      <Footer year = {new Date().getFullYear()}/>
     </div>
     </>
   )

@@ -3,7 +3,7 @@ import {motion,useTime, useTransform, AnimatePresence} from 'framer-motion';
 import linkedIn from '../assets/LI-In-Bug.png'
 import gitHub from '../assets/github-mark-white.png'
 
-export const Footer = () => {
+export const Footer = (props) => {
   return (
     <>
     <li className='social-media'>
@@ -23,6 +23,10 @@ export const Footer = () => {
         </motion.button>
       </ul>
      </li>
+
+     <footer>
+        <p>Copyright {props.year}</p>
+     </footer>
     </>
   )
 }

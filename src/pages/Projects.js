@@ -1,11 +1,11 @@
 import React from 'react'
+import { NavBar } from '../components/NavBar'
 
 const Projects = () => {
   return (
    <>
-        <div className='project_title'>
-            <h1>Take a Look!</h1>
-        </div>
+      <NavBar/>
+      <h1>Projects Page</h1>
    </>
   )
 }
