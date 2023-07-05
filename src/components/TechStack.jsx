@@ -16,8 +16,10 @@ const TechStack = () => {
             <li>Python</li>
             <li>Git</li>
             <li>Bash</li>
-            <li></li>
-            <li></li>
+            <li>Git</li>
+            <li>Figma</li>
+            <li>GitHub</li>
+            <li>Figma</li>
         </ul>
     </div>
   )
