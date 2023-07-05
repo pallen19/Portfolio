@@ -43,7 +43,7 @@ const ContactButton = () => {
                 <input type="submit" value={"Submit"} />
               </form>
             }
-            //  onSubmit={<input type='submit' value={"Submit"}/>}
+             onSubmit={()=> setFirstName(target.value)}
             handleClose={close}
           />
         )}

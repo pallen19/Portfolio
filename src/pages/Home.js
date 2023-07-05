@@ -16,13 +16,13 @@ const Home = () => {
       <div className="home_page">
         <div className="main_photo">
           <img src={mainPicture} alt="photo" />
-          <AboutIntro/>
+          <AboutIntro />
         </div>
         <ProfessionName />
         <ContactButton />
         <TechStack />
         {/* <Projects/> */}
-        <Outlet/>
+        <Outlet />
       </div>
       <div className="footer">
         <Footer year={new Date().getFullYear()} />
