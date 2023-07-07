@@ -14,11 +14,11 @@ const Home = () => {
     <>
       <NavBar />
       <div className="home_page">
-        <div className="main_photo">
+        <div className="about_me">
           <img src={mainPicture} alt="photo" />
+          <ProfessionName />
           <AboutIntro />
         </div>
-        <ProfessionName />
         <ContactButton />
         <TechStack />
         {/* <Projects/> */}

@@ -2,13 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+************* HOME PAGE ***************
+*/
 .home-page {
   bottom: 0rem;
+  color: aliceblue;
 }
+
+/*
+************* BODY ***************
+*/
 body {
   background-color: black;
   display: grid;
 }
+
+/*
+************* HOME PAGE TITLE ***************
+*/
 .home_title {
   font-size: 1.7rem;
   list-style: none;
@@ -20,6 +32,10 @@ body {
   font-weight: bold;
   color: aquamarine;
 }
+
+/*
+************* NAV LINKS ***************
+*/
 .nav-links {
   font-size: 1rem;
   list-style: none;
@@ -32,26 +48,74 @@ body {
   color: gray;
   cursor: pointer;
 }
+
+/*
+************* NAV LINKS ON HOVER ***************
+*/
 .nav-links:hover {
   transform: scale(4);
   /* transition-delay: 85ms; */
   color: white;
 }
 
-.home_page {
-  color: aliceblue;
-}
+/*
+************* PORTRAIT PHOTO ***************
+*/
+.about_me {
 
-.main_photo {
-  padding-top: 30px;
-  padding-left: 20px;
+  display: flexbox;
+  color: white;
+  /* padding-left: 20px;
   padding-bottom: 1rem;
-  bottom: 0rem;
+  padding-top: 30px;
+  bottom: 0rem; */
   size: 10rem;
   width: 25%;
   height: 70%;
+  overflow: auto;
 }
 
+/*
+************* MY NAME  ***************
+*/
+.profession {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: WHITE;
+  left: 0;
+  line-height: 50px;
+  margin-top: 200px;
+  position: absolute;
+  text-align: center;
+  /*
+  justify-content: center;
+  top: 0%;
+  width: 100%;
+  color: white; */
+}
+
+/*
+ ************* JOB POSITION NAME  ***************
+ */
+.profession-name {
+  /* font-size: 4rem;
+  font-weight: bolder; */
+}
+.profession-title {
+  font-size: 1.75rem;
+  font-weight: lighter;
+  color: #d3d3d3;
+}
+
+/*
+************* ABOUT ME DESCRIPTION ***************
+*/
+.section_about{
+
+}
+
+/*
+************* MODAL BACKDROP ***************
+*/
 .backdrop {
   position: absolute;
   top: 0;
@@ -64,6 +128,9 @@ body {
   justify-content: center;
 }
 
+/*
+************* MODAL ***************
+*/
 .modal {
   width: clamp(50%, 700px, 90%);
   height: min (50%, 300px);
@@ -77,6 +144,9 @@ body {
   color: black;
 }
 
+/*
+************* SOCIAL MEDIA ***************
+*/
 .social-media {
   list-style: none;
   display: inline;
@@ -84,6 +154,10 @@ body {
   position: relative;
   left: 0;
 }
+
+/*
+************* SOCIAL LOGOS ***************
+*/
 .social-logo {
   list-style: none;
   display: inline;
@@ -94,9 +168,17 @@ body {
   width: 3.5rem;
   bottom: 0.5rem;
 }
+
+/*
+************* SOCIAL ICONS ***************
+*/
 .social-logo:hover {
   cursor: pointer;
 }
+
+/*
+************* PROJECT TITLE ***************
+*/
 .project_title {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 2rem;
@@ -108,6 +190,10 @@ body {
   top: 50%;
   width: 100%;
 }
+
+/*
+************* PROJECT DESCRIPTIONS ***************
+*/
 .section_about {
   position: absolute;
   width: 45%;
@@ -120,6 +206,9 @@ body {
   overflow: auto;
 }
 
+/*
+************* CONTACT ME BUTTON ***************
+*/
 .save-button1 {
   background-color: white;
   border: none;
@@ -134,6 +223,9 @@ body {
   box-decoration-break: slice;
 }
 
+/*
+************* CONTACT ME TITLE ***************
+*/
 .contact-title {
   font-family: Georgia, "Times New Roman", Times, serif;
   text-shadow: 1px 1px 1px white, 2px 2px 1px white;
@@ -143,6 +235,9 @@ body {
   justify-content: center;
 }
 
+/*
+************* CONTACT ME CLOSE X-BUTTON ***************
+*/
 .contact-close {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 1.2rem;
@@ -152,6 +247,9 @@ body {
   left: 1rem;
 }
 
+/*
+************* CONTACT INPUT BOXES ***************
+*/
 input[type="text"] {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 1.2rem;
@@ -162,37 +260,25 @@ input[type="text"] {
   border-radius: 8px;
 }
 
+/*
+************* CONTACT SUBMIT BUTTON  ***************
+*/
 input[type="Submit"] {
   background-color: white;
   border-radius: 4px;
   padding: 0.3rem;
 }
+
+/*
+************* CONTACT SUBMIT BUTTON ON HOVER  ***************
+*/
 input[type="Submit"]:hover {
   cursor: pointer;
 }
 
-.profession {
-  font-family: Georgia, "Times New Roman", Times, serif;
-
-  left: 0;
-  line-height: 50px;
-  margin-top: 200px;
-  position: absolute;
-  text-align: center;
-  justify-content: center;
-  top: 0%;
-  width: 100%;
-}
-.profession-name {
-  font-size: 4rem;
-  font-weight: bolder;
-}
-.profession-title {
-  font-size: 1.75rem;
-  font-weight: lighter;
-  color: #d3d3d3;
-}
-
+/*
+************* TECH CONTAINER  ***************
+*/
 .tech {
   font-family: Georgia, "Times New Roman", Times, serif;
   left: 0;
@@ -203,6 +289,10 @@ input[type="Submit"]:hover {
   width: 100%;
   /* background-color: beige; */
 }
+
+/*
+************* TECH STACK  ***************
+*/
 .tech-stack {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 1.5rem;
@@ -214,6 +304,9 @@ input[type="Submit"]:hover {
   width: 100%;
 }
 
+/*
+************* TECH STACK UL  ***************
+*/
 .tech ul {
   font-size: 1em sans-serif;
   list-style-type: none;
@@ -221,6 +314,9 @@ input[type="Submit"]:hover {
   margin: 0;
 }
 
+/*
+************* TECH STACK UL LI  ***************
+*/
 .tech ul li {
   display: inline;
   list-style: none;
@@ -228,6 +324,10 @@ input[type="Submit"]:hover {
   text-decoration: none;
   padding: 1rem;
 }
+
+/*
+************* PROJECTS  ***************
+*/
 .projects {
   color: white;
 }
