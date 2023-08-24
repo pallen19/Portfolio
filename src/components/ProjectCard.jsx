@@ -7,8 +7,8 @@ const ProjectCard = (props) => {
     <>
       <div className="projects">
         <h1>{props.name}</h1>
-        <span>{props.image}</span>
         <p>{props.description}</p>
+        <span>{props.image}</span>
       </div>
     </>
   );

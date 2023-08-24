@@ -1,11 +1,13 @@
 import React from 'react'
 import {Link} from "react-router-dom";
+import Home from '../pages/Home';
 
 export const NavBar = () => {
   return (
     <>
     <div className='nav-bar'>
       <h1 className='home_title'>paul.dev</h1>
+        {/* <Link to={"/"}/> */}
         <ul >
           <nav>
             <li className='nav-links'>
@@ -16,12 +18,12 @@ export const NavBar = () => {
             </li>
 
             <li className='nav-links'>
-              <Link to="/about">About</Link>  
+              <Link to="/resume">Resume</Link>  
             </li>
 
-            <li className='nav-links'>
+            {/* <li className='nav-links'>
               <Link to="/contact">Contact</Link>  
-            </li>
+            </li> */}
           </nav>
         </ul>
       

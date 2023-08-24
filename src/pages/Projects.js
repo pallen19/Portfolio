@@ -6,11 +6,15 @@ const Projects = () => {
   return (
     <>
       <NavBar />
-      <h1>Portfolio</h1>
         <div className="cards">
+          <h1 className="project_title">Portfolio</h1>
           <ProjectCard
             name="Bean Counter"
-            description="This is an accounting software that was built to store businesses expenses and calculate their balance sheets"
+            description="Creating accounting software for an accountant agency
+            Enabled role-based access for specific user logins and viewing managed accounts using
+            AWS Cognito
+            Allow users to reset passwords with a random emall code using AWS
+            Cognito"
           />
           <ProjectCard
             name="Battle Ship"

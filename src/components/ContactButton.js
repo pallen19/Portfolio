@@ -5,6 +5,9 @@ const ContactButton = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const close = () => setModalOpen(false);
   const open = () => setModalOpen(true);
+  
+
+
   return (
     <div>
       <motion.button
@@ -24,26 +27,39 @@ const ContactButton = () => {
         {modalOpen && (
           <Modal
             modalOpen={modalOpen}
-            title={<h1>Send a message !</h1>}
-            fullName={
+            title={"Let's Connect!"}
+            firstName={
               <form>
-                <label>
-                  Name:
-                  <input type="text" name="name" />
-                </label>
+                  {/* onChange={handleChange} value={data.name} */}
+                  <input type="name" name="name" placeholder="Enter your name" required />
                 {/* <input type='submit' value={"Submit"}/> */}
               </form>
             }
-            message={
+            lastName={
               <form>
-                <label>
-                  Message:
-                  <input type="text" text="message" />
-                </label>
-                <input type="submit" value={"Submit"} />
+                  {/* onChange={handleChange} value={data.name} */}
+                  <input type="last-name" name="last-name" placeholder="Enter your last name" required />
+                {/* <input type='submit' value={"Submit"}/> */}
               </form>
             }
-             onSubmit={()=> setFirstName(target.value)}
+            email={
+              <form>
+                  {/* onChange={handleChange} value={data.name} */}
+                  <input type="email" name="email" placeholder="Enter your email" required />
+                {/* <input type='submit' value={"Submit"}/> */}
+              </form>
+            }
+
+            message={
+              <form>
+               <textarea text="message" cols={30} rows={10} placeholder="Type here ..." />
+              </form>
+            }
+
+            onSubmit={
+              <button onClick= {close} type='submit'>Send</button>
+            }
+             
             handleClose={close}
           />
         )}
