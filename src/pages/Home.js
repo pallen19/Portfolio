@@ -8,6 +8,7 @@ import ContactButton from "../components/ContactButton.js";
 import { Outlet } from "react-router-dom";
 
 function Home() {
+  var ACCESS_TOKEN="1//0125s9CUcDMsqCgYIARAAGAESNwF-L9Ir6KKmYO1Uw9uDTaPqVRbB7yXaiRwoxdP_8-hsRlMxoGeandQI-ivUzINpnK_eF2a0FHM"
   return (
     <>
       <NavBar />
