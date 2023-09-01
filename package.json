@@ -16,6 +16,7 @@
     "@emailjs/browser": "^3.11.0",
     "@headlessui/react": "^1.7.15",
     "@heroicons/react": "^2.0.18",
+    "firebase": "^10.3.0",
     "firebase-cli": "^1.2.0",
     "framer-motion": "^10.12.16",
     "react": "^18.2.0",
