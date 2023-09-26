@@ -2,13 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+
+*{
+  font-size: 16px;
+}
 /* GLOBAL STYLES
 -------------------------------------->*/
 h1 {
   /* color: #537FE7; */
+  /* color: #4c3ca8; */
   font-family: Georgia, "Times New Roman", Times, serif;
   /* font-weight: 700; */
-  /* font-size: 1.5rem; */
+  
+
+  
 }
 
 h2 {
@@ -16,7 +23,8 @@ h2 {
 
 body {
   /* background-color: #181823; */
-  background-color: #36454F;
+  /* background-color: #36454F; */
+  background-color: #eefafd;
   
 }
 
@@ -27,7 +35,7 @@ p {
 
 footer{
   padding: 10px;
-  color: white;
+  color: #4c3ca8;
 }
 
 section{
@@ -57,7 +65,7 @@ section{
 ************* NAV BAR ***************/
 .nav-bar {
   display: flex;
-  gap: 80%;
+  gap: 70%;
   padding: 15px;
   /* border: 3px solid #73ad21; */
 }
@@ -68,7 +76,8 @@ section{
 */
 .home_title {
   font-size: 1.7rem;
-  color: white;
+  color: #4c3ca8;
+  cursor: pointer;
  /* border: 3px solid #73ad21; */
 }
 
@@ -94,7 +103,7 @@ section{
   position: relative;
   top: 0rem;
   /* left: 90rem; */
-  color: gray;
+  color: #2b215e;
   cursor: pointer;
 }
 
@@ -114,25 +123,29 @@ section{
   max-width: 1200px;
   display: flex;
   flex-direction: row;
-  flex:1 1;
-  flex-shrink: 8;
-  flex-wrap: wrap;
+  flex: 1 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-wrap: nowrap;
   /* align-items:center; */
-  justify-content: center;
+  /* justify-content: center; */
   color: white;
   overflow: visible;
   margin: 50px auto;
-  /* border: 3px solid #73ad21; */
+  border: 3px solid #73ad21;
 }
 
 
 /*
 ************* PORTRAIT ***************
+photo image
 */
 .portrait {
-  max-width: 450px;
-  flex-shrink: 8;
-  padding-bottom: 20px;
+  width: min(40%, 250px);
+  /* max-width: 450px; */
+  flex-shrink: 0;
+  flex-grow: 1;
+  padding: 20px;
   
 }
 
@@ -144,10 +157,10 @@ section{
   position: relative;
   text-align: center;
   /* justify-content: stretch; */
-  color: white;
+  color: #4c3ca8;
   /* border: 3px solid #73ad21; */
-  line-height: 3rem;
-  padding-bottom: 10px;
+  
+  padding-bottom:  calc(1.2 +10vh);
 }
 
 /*
@@ -155,16 +168,16 @@ section{
  */
 .profession-name {
   margin: 0;
-  font-size: 4rem;
+  font-size: clamp(1.2rem, 5vh, 5rem);
   font-weight: bolder;
-  color: white;
+  color: #2b215e;
   padding: 0;
 }
 .profession-title {
-  font-size: 1.75rem;
+  font-size: clamp(0.8rem, 4vh, 1.7rem);
   font-weight: lighter;
-  color: #d3d3d3;
-  padding-top: 5px;
+  color: #4c3ca8;
+  /* padding-top: 5px; */
   padding-bottom: 10px;
 }
 
@@ -208,13 +221,14 @@ section{
 ************* CONTACT BUTTON ***************
 */
 .save-button1 {
-  background-color: #FFFF8F;
+  background-color: #ed3d4f;
   border-radius: 16px;
   position: relative;
   color: #000000e1;
   padding: 24px 250px;
   /* text-align: center; */
-  font-size: 1.3rem;
+  /* font-size: 1.3rem; */
+  font-size: clamp(0.8rem, 4vh, 1.3rem);
   font-weight: 700;
   justify-content: center;
   

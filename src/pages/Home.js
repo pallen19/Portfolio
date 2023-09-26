@@ -18,6 +18,7 @@ function Home() {
             <img src={mainPicture} alt="photo" />
           </div>
           <ProfessionName />
+          
         <ContactButton />
         </div>
       

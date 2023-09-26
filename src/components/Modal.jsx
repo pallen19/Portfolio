@@ -8,6 +8,9 @@ export const Modal = ({ handleClose, title, firstName,lastName, email, message, 
   const [data, setData] = useState({fname: "", lname: "", emailAddress: "", emailMessage: "" , fullName:""})
 const statusUpdate = () => {
   // {setData({...data, fullName: data.fname+" "+data.lname})}
+
+  
+  
     emailjs.send("service_3t91pwn", "template_43j4o2w", {from_name: data.fname, to_name: "Lance", reply_to: data.emailAddress, message: data.emailMessage}, "SbiAbSTlCkYWdxSLl")
     .then((result)=>{
       console.log(result.text);},

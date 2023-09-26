@@ -6,8 +6,8 @@ export const NavBar = () => {
   return (
     <>
     <div className='nav-bar'>
-      <h1 className='home_title'>paul.dev</h1>
-        {/* <Link to={"/"}/> */}
+      <h1 className='home_title'>Paul Allen
+        <Link to={"/"}></Link></h1>
         <ul >
           <nav>
             <li className='nav-links'>

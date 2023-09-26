@@ -50,9 +50,17 @@ module.exports = {
     },
     {
         test: /\.css$/i,
-        include: path.resolve(__dirname, 'src'),
-        use: ["style-loader", "css-loader", "postcss-loader"],
+        // include: path.resolve(__dirname, 'src'),
+        
+        use: ["style-loader", "css-loader","postcss-loader"],
+        
       },
+
+      {
+        test: /\.scss$/,
+        use: ["style-loader", "css-loader", "sass-loader"],
+      },
+      
       {
         test: /\.(png|jpe?g|gif)$/i,
         use: [ "file-loader" ],
@@ -60,4 +68,7 @@ module.exports = {
     ],
     
   },
+  // resolveLoader: {
+  //   modules: ['node_modules', path.resolve(__dirname, 'loaders')],
+  // },
 };

@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavBar } from '../components/NavBar'
-import resume from '../assets/Resume/resume.png'
+import resume from '../assets/Resume/newResume.png'
 
 const Resume = () => {
   return (

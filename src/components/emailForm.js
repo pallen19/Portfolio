@@ -14,26 +14,26 @@ const EmailForm = () => {
         <form>
           <label>
             First Name:
-            <input type="text" name="first-name" id="first-name" value={firstName}
+            <input type="text" required='true' name="first-name" id="first-name" value={firstName}
               onChange={(e)=> setfirstName(e.target.value)} />
           </label>
 
           <label>
             Last Name:
-            <input type="text" name="last-name" id="last-name" value={lastName}
+            <input type="text" required name="last-name" id="last-name" value={lastName}
               onChange={(e)=> setlastName(e.target.value)}
               />
           </label>
 
           <label>
             Email:
-            <input type="text" name="email" id="email" value={email}
-              onChange={(e)=> setEmail(e.target.value)} />
+            <input type="text"  name="email" id="email" value={email}
+              onChange={(e)=> setEmail(e.target.value)}  required />
           </label>
 
           <label className="message">
             Message:
-            <textarea type="text" name="message" id="message" value={message}
+            <textarea required type="text" name="message" id="message" value={message}
               onChange={(e)=> setMessage(e.target.value)} />
           </label>
 
