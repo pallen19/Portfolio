@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -191,6 +191,10 @@ select,
 textarea {
   font-family: inherit;
   /* 1 */
+  font-feature-settings: inherit;
+  /* 1 */
+  font-variation-settings: inherit;
+  /* 1 */
   font-size: 100%;
   /* 1 */
   font-weight: inherit;
@@ -338,6 +342,14 @@ ul,
 menu {
   list-style: none;
   margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+
+dialog {
   padding: 0;
 }
 
@@ -522,6 +534,568 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-body{
-  background-color: #003000;
+.visible {
+  visibility: visible;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.w-24 {
+  width: 6rem;
+}
+
+.p-32 {
+  padding: 8rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.transition {
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+*{
+  font-size: 16px;
+}
+
+/* GLOBAL STYLES
+-------------------------------------->*/
+
+h1 {
+  /* color: #537FE7; */
+  /* color: #4c3ca8; */
+  font-family: Georgia, "Times New Roman", Times, serif;
+  /* font-weight: 700; */
+}
+
+h2 {
+}
+
+body {
+  /* background-color: #181823; */
+  /* background-color: #36454F; */
+  background-color: #eefafd;
+}
+
+p {
+}
+
+footer{
+  padding: 10px;
+  color: #4c3ca8;
+}
+
+section{
+  font-size: larger;
+}
+
+/*
+************* about me description ***************
+*/
+
+.section_about{
+  padding-bottom: 10px;
+  /* border: 3px solid #73ad21; */
+}
+
+/*
+************* HOME PAGE ***************
+*/
+
+.home-page {
+  bottom: 0rem;
+  color: aliceblue;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0px;
+  /* display: flex; */
+}
+
+/*
+************* NAV BAR ***************/
+
+.nav-bar {
+  display: flex;
+  gap: 70%;
+  padding: 15px;
+  /* border: 3px solid #73ad21; */
+}
+
+/*
+
+/*
+************* HOME PAGE TITLE ***************
+*/
+
+.home_title {
+  font-size: 1.7rem;
+  color: #4c3ca8;
+  cursor: pointer;
+  /* border: 3px solid #73ad21; */
+}
+
+/*
+************* NAV LINKS CONTAINERS ***************/
+
+.nav-bar ul nav {
+  max-width: 1000px;
+  display: flex;
+  /* border: 3px solid #73ad21; */
+}
+
+/*
+************* NAV LINKS ***************
+*/
+
+.nav-links {
+  margin: 0;
+  max-width: 800px;
+  width: 801%;
+  font-size: 1rem;
+  justify-content: center;
+  padding: 7px;
+  /* padding-right: 10px; */
+  font-family: Helvetica, Arial, sans-serif;
+  position: relative;
+  top: 0rem;
+  /* left: 90rem; */
+  color: #2b215e;
+  cursor: pointer;
+}
+
+/*
+************* NAV LINKS ON HOVER ***************
+*/
+
+.nav-links:hover {
+  /* transform: scale(4); */
+  /* transition-delay: 85ms; */
+  color: white;
+}
+
+/*
+************* ABOUT ME CONTAINER ***************
+*/
+
+.about_me {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-wrap: nowrap;
+  /* align-items:center; */
+  /* justify-content: center; */
+  color: white;
+  overflow: visible;
+  margin: 50px auto;
+  border: 3px solid #73ad21;
+}
+
+/*
+************* PORTRAIT ***************
+photo image
+*/
+
+.portrait {
+  width: min(40%, 250px);
+  /* max-width: 450px; */
+  flex-shrink: 0;
+  flex-grow: 1;
+  padding: 20px;
+}
+
+/*
+************* MY NAME AND INTRO CONTAINER  ***************
+*/
+
+.profession {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  position: relative;
+  text-align: center;
+  /* justify-content: stretch; */
+  color: #4c3ca8;
+  /* border: 3px solid #73ad21; */
+  padding-bottom:  calc(1.2 +10vh);
+}
+
+/*
+ ************* JOB POSITION NAME  ***************
+ */
+
+.profession-name {
+  margin: 0;
+  font-size: clamp(1.2rem, 5vh, 5rem);
+  font-weight: bolder;
+  color: #2b215e;
+  padding: 0;
+}
+
+.profession-title {
+  font-size: clamp(0.8rem, 4vh, 1.7rem);
+  font-weight: lighter;
+  color: #4c3ca8;
+  /* padding-top: 5px; */
+  padding-bottom: 10px;
+}
+
+/*
+************* ABOUT ME DESCRIPTION ***************
+*/
+
+.section_about {
+  width: 100%;
+  position: relative;
+  justify-content: center;
+}
+
+/*
+************* SOCIAL MEDIA LINKS ***************
+*/
+
+.social-media {
+  display: flex;
+  /* padding: 0px 0px 0px 40px; */
+  position: relative;
+  align-items: flex-start;
+}
+
+/*
+************* SOCIAL LOGOS ***************
+*/
+
+.social-logo {
+  padding: 0px 0px 0px 10px;
+  max-height: 2.5rem;
+  justify-content: space-between;
+  /* border: 3px solid orange; */
+}
+
+/*
+************* SOCIAL MEDIA ON HOVER ***************
+*/
+
+.social-logo:hover {
+  cursor: pointer;
+}
+
+/*
+************* CONTACT BUTTON ***************
+*/
+
+.save-button1 {
+  background-color: #ed3d4f;
+  border-radius: 16px;
+  position: relative;
+  color: #000000e1;
+  padding: 24px 250px;
+  /* text-align: center; */
+  /* font-size: 1.3rem; */
+  font-size: clamp(0.8rem, 4vh, 1.3rem);
+  font-weight: 700;
+  justify-content: center;
+}
+
+.save-button1:hover {
+  cursor: pointer;
+  animation-delay: 3ms;
+  /* color: lightskyblue;  */
+}
+
+/*
+************* MODAL BACKDROP ***************
+*/
+
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150%;
+  background: #000000e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*
+************* MODAL WINDOW ***************
+*/
+
+.modal {
+  width: clamp(50%, 700px, 90%);
+  height: min (50%, 300px);
+  margin: auto;
+  padding: 0px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  /* makes contact form only in the very center of the modal window */
+  align-items: center;
+  background-color: white ;
+  color: black;
+}
+
+/*
+************* CONTACT INPUT BOXES ***************
+*/
+
+.content-wrapper input, textarea{
+  margin: 15px auto;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+}
+
+/*
+************* CONTACT SUBMIT BUTTON  ***************
+*/
+
+.content-wrapper button{
+  display: block;
+  height: 30px;
+  width: 80px;
+  padding: 5px;
+  align-items: center;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(29, 185, 237);
+  color: white;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+/*
+************* CONTACT SUBMIT BUTTON ON HOVER  ***************
+*/
+
+.content-wrapper button:hover{
+  cursor: pointer;
+}
+
+/*
+*
+************ CONTACT GENERIC  ***************
+*/
+
+.content-wrapper{
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 500;
+}
+
+/*
+************* CONTACT TITLE  ***************
+*/
+
+.contact-title{
+  font-size: 3.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+/*
+************* CONTACT NAME ***************
+*/
+
+.contact-name{
+  font-size: 1.2rem;
+}
+
+/*
+
+/*
+************* CONTACT NAME ***************
+*/
+
+.contact-message{
+  font-size: 1.2rem;
+}
+
+/*
+************* CONTACT ME CLOSE X-BUTTON ***************
+*/
+
+.contact-close {
+  font-family:"Arial", Times, serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  position: fixed;
+  text-align: left;
+  top: 0.5rem;
+  left: 1rem;
+}
+
+/*
+************* TECH CONTAINER  ***************
+*/
+
+.tech {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  left: 0;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  top: 0%;
+  width: 100%;
+  background-color: beige;
+}
+
+/*
+************* TECH STACK  ***************
+*/
+
+.tech-stack {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+  left: 0;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  top: 0%;
+  width: 100%;
+  display: flex;
+}
+
+/*
+************* TECH STACK UL  ***************
+*/
+
+.tech ul {
+  display: flex;
+  font-size: 1em sans-serif;
+  list-style-type: none;
+  /* border: 3px solid #73ad21; */
+  justify-content: center;
+}
+
+/*
+************* TECH STACK UL LI  ***************
+*/
+
+.tech ul li {
+  list-style: none;
+  text-align: center;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+/*
+************* PROJECT TITLE ***************
+*/
+
+.project_title {
+  /* display: grid; */
+  font-size: 2rem;
+  color:white;
+  font-family: 700;
+  margin: 20px auto;
+  /* border: 3px solid orange; */
+}
+
+/*
+************* PROJECTS  ***************
+*/
+
+.projects {
+  display: grid;
+  grid-template-columns: 200px 250px;
+  /*  grid-template-columns: repeat(4, 100px);*/
+  color: white;
+  /* border: 4px solid yellow; */
+  /* margin: 20px auto;
+  row-gap: 5px;
+  column-gap: 10px;
+  justify-content: flex-start;
+  ; */
+}
+
+.cards{
+  align-items: center;
+  /* border: 4px solid yellow; */
+}
+
+.projects h1{
+  font-size: 1rem;
+  font-weight: 800;
+  color: lightgray;
+}
+
+.projects p{
+  font-size: 1rem;
+}
+
+/*
+************* EMAILFORM ***************/
+
+.emailform{
+  margin: 10%;
+  margin-bottom: 50px;
+  position: relative;
+  color: white;
+  max-width: 100%;
+  /* border: 4px solid orange; */
+  height:-moz-fit-content;
+  height:fit-content;
+  width: 80%;
+  align-items: center;
+  text-align: center;
+}
+
+.emailform h1{
+  font-size: 3rem;
+}
+
+.emailform form{
+  display: inline-grid;
+  width: 80%;
+}
+
+.emailform form label{
+  text-align: left;
+  /* border: 1px solid red; */
+}
+
+.emailform form label input{
+  color: black;
+}
+
+.submit{
+  color:white;
+}
+
+/* .resumeContainer{
+  
+  border: solid 3px red;
+} */
+
+.resume{
+  width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
