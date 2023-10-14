@@ -7,25 +7,34 @@ const Projects = () => {
   return (
     <>
       <NavBar />
-    <div className="projectSection font-bold text-lg">Projects</div>
+    <div className="projectSection">Projects</div>
         <div className="cards">
           <h1 className="project_title">Portfolio</h1>
-          {/* <ProjectCard
-            name="Bean Counter"
-            description="Collaborated on a cloud-based accounting app, Bitter Bean Accounting, 
-            utilizing React.JS and Figma for the front-end, Google's NoSQL Firebase for the database,
-             and AWS for back-end management and hosting. Employed Agile methodology with 5 sprints,
-              emphasizing role-based access and daily stand-ups.
+          <ProjectCard
+            name="BUGGY"
+            description="Utilizes .NET, C#, and HTML Agility Pack for Efficient Web Scraping of item prices from various retail websites.
+            • Compiles and presents a comprehensive list of prices for the specified item across different websites.
+            • Saves time and effort by consolidating price information from multiple platforms.
             "
           />
           <ProjectCard
-            name="Battle Ship"
-            description="The idea for this project is to create the game battle ship from scratch and let the two computers automatically pick the position of their ships and then randomly shoot at the opponent's ship in which the program would let us know if we hit or missed and turn that cell on the board red. This communication between the two computers is done by using computer sockets. Once one of the ships are destroyed the program will let us know which computer won along with the score and ask if we want to play again or not."
+            name="BEAN COUNTER"
+            description="Collaborated on a Cloud-Based Accounting App, “Bitter Bean Accounting”, Utilizing React.JS and Figma for the front-end
+            • Google’s NoSQL Firebase for the database, and AWS for back-end management and hosting
+            • Employed Agile Methodology with 5 Sprints, emphasizing Role-based Access and Daily Stand-ups
+            • Enabled role-based access for login and viewing managed accounts using AWS Cognito
+            • Allow users to reset passwords with a random email code using AWS"
           />
           <ProjectCard
-            name="Color Picker"
-            description="The program allows you to find the hexcode for any color that is available on your color screen just by hovering your mouse over that area using Java and JavaFX"
-          /> */}
+            name="COURAGE THE DISCORD BOT"
+            description="The bot continuously scans for specific keywords or patterns.
+            • When triggered, the bot responds instantly with predefined automated
+            messages.
+            • The bot can take various actions based on the message content.
+            • Administrators can customize triggers, responses and actions.
+            • Streamlines moderation efforts with real-time responses and actions
+            • TECH STACK: DISCORD API, PYTHON"
+          />
 
           <div className="p-32 ... ">
             

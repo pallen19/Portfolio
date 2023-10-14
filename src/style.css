@@ -122,13 +122,13 @@ section{
 .about_me {
   max-width: 1200px;
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   flex: 1 1;
   flex-grow: 1;
   flex-shrink: 1;
-  flex-wrap: nowrap;
-  /* align-items:center; */
-  /* justify-content: center; */
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   color: white;
   overflow: visible;
   margin: 50px auto;
@@ -141,11 +141,14 @@ section{
 photo image
 */
 .portrait {
+  float: left;
   width: min(40%, 250px);
-  /* max-width: 450px; */
-  flex-shrink: 0;
-  flex-grow: 1;
-  padding: 20px;
+  margin-top: 0%;
+  max-width: 23%;
+  flex-grow: 2;
+  padding-bottom: 20px;
+  
+  
   
 }
 
@@ -177,7 +180,6 @@ photo image
   font-size: clamp(0.8rem, 4vh, 1.7rem);
   font-weight: lighter;
   color: #4c3ca8;
-  /* padding-top: 5px; */
   padding-bottom: 10px;
 }
 
@@ -186,8 +188,7 @@ photo image
 */
 .section_about {
   width: 100%;
-  position: relative;
-  justify-content: center;
+  
 }
 
 /*
@@ -225,7 +226,7 @@ photo image
   border-radius: 16px;
   position: relative;
   color: #000000e1;
-  padding: 24px 250px;
+  padding: 8px 80px;
   /* text-align: center; */
   /* font-size: 1.3rem; */
   font-size: clamp(0.8rem, 4vh, 1.3rem);
@@ -413,7 +414,7 @@ photo image
 .project_title {
   /* display: grid; */
   font-size: 2rem;
-  color:white;
+  color:black;
   font-family: 700;
   margin: 20px auto;
   /* border: 3px solid orange; */
@@ -423,8 +424,12 @@ photo image
 */
 .projects {
  display: grid;
-  grid-template-columns: 200px 250px;
-/*  grid-template-columns: repeat(4, 100px);*/
+ 
+  /* grid-template-columns: .25fr 1fr ; */
+  gap: 10px;
+  grid-gap: 10px;
+ grid-template-columns: repeat(3,  1fr);
+ grid-auto-rows: minmax(150px, auto);
   color: white; 
   /* border: 4px solid yellow; */
   /* margin: 20px auto;
@@ -437,18 +442,25 @@ photo image
 
 .cards{
   align-items: center;
-
-  /* border: 4px solid yellow; */
+  color: black;
+  border: 4px solid yellow;
 }
 .projects h1{
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 800;
-  color: lightgray;
+  color: black;
+  border: 4px solid red;
   
 }
 
 .projects p{
   font-size: 1rem;
+  color: black;
+  border: 4px solid blue;
+  max-width: 100%;
+}
+.projectSection{
+color: black;
 }
 
 /*

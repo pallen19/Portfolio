@@ -4,6 +4,8 @@ import App from "./components/App";
 import './style.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
+import 'tailwindcss/tailwind.css'
+
 
 // import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 const rootElement = document.getElementById('root');

@@ -3,7 +3,7 @@ import React from 'react'
 const PCards = () => {
   return (
     <>
-    <div className='font-lg'>Projects</div>
+    <div className='text-lg'>Projects</div>
   </>
   )
 }

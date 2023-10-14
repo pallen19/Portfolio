@@ -538,30 +538,22 @@ video {
   visibility: visible;
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
 .hidden {
   display: none;
-}
-
-.w-24 {
-  width: 6rem;
 }
 
 .p-32 {
   padding: 8rem;
 }
 
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-bold {
@@ -754,13 +746,12 @@ photo image
   padding: 0;
 }
 
-.profession-title {
+/* .profession-title {
   font-size: clamp(0.8rem, 4vh, 1.7rem);
   font-weight: lighter;
   color: #4c3ca8;
-  /* padding-top: 5px; */
   padding-bottom: 10px;
-}
+} */
 
 /*
 ************* ABOUT ME DESCRIPTION ***************

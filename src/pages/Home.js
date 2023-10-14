@@ -27,6 +27,7 @@ function Home() {
       </div>
       <div className="footer">
         <Footer year={new Date().getFullYear()} />
+      
       </div>
     </>
   );
