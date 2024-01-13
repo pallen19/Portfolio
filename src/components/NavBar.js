@@ -17,13 +17,13 @@ export const NavBar = () => {
               <Link to="/projects">Projects</Link>
             </li>
 
-            <li className='nav-links'>
-              <Link to="/resume">Resume</Link>  
-            </li>
-
             {/* <li className='nav-links'>
-              <Link to="/contact">Contact</Link>  
+              <Link to="/resume">Resume</Link>  
             </li> */}
+
+            <li className='nav-links'>
+              <Link to="/blog">Blog</Link>  
+            </li>
           </nav>
         </ul>
       

@@ -24,7 +24,7 @@ h2 {
 body {
   /* background-color: #181823; */
   /* background-color: #36454F; */
-  background-color: #eefafd;
+  background-color: #fff;
   
 }
 
@@ -67,6 +67,8 @@ section{
   display: flex;
   gap: 70%;
   padding: 15px;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0.08);
   /* border: 3px solid #73ad21; */
 }
 /*
@@ -76,7 +78,7 @@ section{
 */
 .home_title {
   font-size: 1.7rem;
-  color: #4c3ca8;
+  color: #000;
   cursor: pointer;
  /* border: 3px solid #73ad21; */
 }
@@ -498,10 +500,10 @@ color: black;
   color:white;
 }
 
-/* .resumeContainer{
-  
+.resumeContainer{
+  margin: 2.5rem;  
   border: solid 3px red;
-} */
+}
 .resume{
   width: 40%;
   display: block;
@@ -509,4 +511,11 @@ color: black;
   margin-right: auto;
 
   
+}
+.blogContainer{
+  margin: 2.5rem;
+}
+#searchBtn{
+  padding: 10px;
+  background-color: rgb(2, 27, 167);
 }
